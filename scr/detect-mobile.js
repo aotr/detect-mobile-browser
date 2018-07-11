@@ -119,15 +119,12 @@ mobile.isAny = function() {
 mobile.getDevice = function() {
     var foundAny = false;
     var getAllMethods = Object.getOwnPropertyNames(mobile).filter(function(property) {
-        // console.log(typeof mobile[property] == 'function');
         return typeof mobile[property] == 'function';
     });
     for (var index in getAllMethods) {
         if (ignoreMethod.includes(getAllMethods[index]) ) {
-        //    console.log(getAllMethods[index]); 
             continue;
         }
-        // console.log(mobile[getAllMethods[index]]());
         if (mobile[getAllMethods[index]]()) {
             return mobile[getAllMethods[index]]();
         }
