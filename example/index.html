@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
+            <script src="../scr/detect-mobile.js" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Is Mobile </title>
 </head>
 <body>
+    
+<h1>Check Console for output</h1>
+<ui>
+    <li>
+        mobile.getDevice()
+    </li>
+    <li>
+        mobile.isAny()
+    </li>
+    <li>
+        mobile.isIOS()
+    </li>
+</ui>
 
-<script>
-console.log(mobile.getDevice());   
-</script>
 </body>
+<script>
+    console.log(
+        mobile.getDevice(),
+        mobile.isAny(),
+        mobile.isIOS()
+    );  
+</script>
 </html>
-

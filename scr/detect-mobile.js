@@ -24,7 +24,6 @@ var ignoreMethod = [
 mobile.setUserAgent = function(userAgent) {
 
     this.userAgent = userAgent;
-    console.log(this.userAgent);
 };
 // Get browser Agent
 mobile.getUserAgent = function() {
